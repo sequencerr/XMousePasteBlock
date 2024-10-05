@@ -18,8 +18,8 @@ For all other distros, please follow the instructions below.
 
 ### Using Docker:
 ```
-$ git clone --depth 1 https://github.com/milaq/XMousePasteBlock.git
-$ sudo docker build --progress=plain -t xmousepasteblock --target export --output type=local,dest=. .
+$ git clone --depth 1 https://github.com/sequencerr/XMousePasteBlock.git
+$ ./install.sh
 ```
 
 ### Manually
