@@ -14,6 +14,15 @@ On Arch Linux you may simply use the [AUR package](https://aur.archlinux.org/pac
 
 For all other distros, please follow the instructions below.
 
+## Building
+
+### Using Docker:
+```
+$ git clone --depth 1 https://github.com/milaq/XMousePasteBlock.git
+$ sudo docker build --progress=plain -t xmousepasteblock --target export --output type=local,dest=. .
+```
+
+### Manually
 ### Acquiring the sourcecode
 
 Clone the repository in whichever way you prefer. For example:
@@ -33,8 +42,6 @@ Fedora:
 ```
 sudo dnf install make gcc pkgconfig libev-devel libX11-devel libXi-devel
 ```
-
-### Building
 
 Compile and install (from the directory in which you cloned the repository):
 ```
