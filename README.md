@@ -21,8 +21,7 @@ For all other distros, please follow the instructions below.
 git clone --depth 1 https://github.com/sequencerr/XMousePasteBlock.git ~/XMousePasteBlock || :
 (cd ~/XMousePasteBlock
 sudo docker build --progress=plain -t xmousepasteblock --target export --output type=local,dest=. .
-[ -d $HOME/.local/bin ] || mkdir -p ~/.local/bin
-mv -fv ./xmousepasteblock ~/.local/bin
+sudo mv -fv ./xmousepasteblock /usr/bin
 [ -d $HOME/.config/autostart ] || mkdir -p ~/.config/autostart
 cp -fv ./xmousepasteblock.desktop ~/.config/autostart
 sudo apt install libev-dev
