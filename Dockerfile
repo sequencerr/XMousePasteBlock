@@ -1,7 +1,7 @@
 FROM debian:12-slim AS build
 ENV DEBIAN_FRONTEND=noninteractive
 WORKDIR /usr/src/app
-RUN apt update && apt install -y --no-install-recommends \
+RUN apt-get update && apt-get install -y --no-install-recommends \
     make \
     gcc \
     pkg-config \
